@@ -12,5 +12,12 @@ module.exports = (mongoose) => {
     }
   );
 
+  schema.method("toJSON", function () {
+    const { __v, _id, ...rest } = this.toObject();
+    rest.id = _id;
+
+    return rest;
+  });
+
   return mongoose.model("mahasiswa", schema);
 };
