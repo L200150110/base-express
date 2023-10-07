@@ -1,0 +1,17 @@
+{
+  "name": "dmp-test",
+  "version": "1.0.0",
+  "description": "dans multi pro test",
+  "main": "index.js",
+  "author": "riskiagung",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.0",
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  }
+}
